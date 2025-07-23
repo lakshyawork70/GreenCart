@@ -1,6 +1,6 @@
 import React from "react";
 import { assets, categories } from "../assets/assets";
-import { useAppContext } from "../context/appContext";
+import { useAppContext } from "../context/AppContext.jsx";
 
 const Categories = () => {
   const { navigate } = useAppContext();

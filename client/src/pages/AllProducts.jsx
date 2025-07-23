@@ -1,5 +1,5 @@
 import React, { use, useEffect, useState } from "react";
-import { useAppContext } from "../context/appContext";
+import { useAppContext } from "../context/AppContext.jsx";
 import ProductCard from "../components/ProductCard";
 
 const AllProducts = () => {
