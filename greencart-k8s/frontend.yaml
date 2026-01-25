@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: greencart-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: greencart-frontend
+  template:
+    metadata:
+      labels:
+        app: greencart-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: lakshyakumar70/greencart-frontend
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: greencart-frontend
+spec:
+  selector:
+    app: greencart-frontend
+  ports:
+    - port: 80
+      targetPort: 80
+  type: NodePort

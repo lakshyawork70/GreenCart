@@ -1,34 +1,23 @@
 Grocery MERN
 
-<<<<<<< HEAD
-=======
+-- Creating using Vite
 
-
-
->>>>>>> 46836d2 (minor changes)
---Creating using vite
-
-
-
-#client section
---npm run dev
+# Client Section
+npm run dev
 https://greencart-frontend-ashy.vercel.app/
 
-
-Adding google fonts ?
-search for outfit google font embedded code -- index.html
-
+Adding Google Fonts:
+Search for Outfit font → copy embed code → paste into index.html
 
 ------------------------
-Seller
 
-npm run server 	
-
-
+# Seller / Backend Section
+npm run server
 https://greencart-backend-4otx.onrender.com
 
-make me understand this code line by line in depth , how this is working , what if any particular thing we do not use. make me understand the functionlity
+------------------------
 
+Git Safe Setup (No Secrets):
 
 rm -rf .git
 git init
