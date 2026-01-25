@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./server
+    container_name: greencart-backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./server/.env
+    restart: unless-stopped
+
+  frontend:
+    build: ./client
+    container_name: greencart-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
