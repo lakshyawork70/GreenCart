@@ -1,9 +1,5 @@
 Grocery MERN
 
-
-MONGO_URI=mongodb+srv://notorious18rj:Cyborg%40031@cluster0.4yzwzfd.mongodb.net/greencart?retryWrites=true&w=majority&appName=Cluster0
-
-
 --Creating using vite
 
 
