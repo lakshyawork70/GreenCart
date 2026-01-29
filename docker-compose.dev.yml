@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   backend:
+    container_name: greencart-backend-dev
     image: greencart-backend-dev
     build:
       context: ./server
@@ -13,8 +14,10 @@ services:
     volumes:
       - ./server:/app
       - /app/node_modules
+    restart: unless-stopped
 
   frontend:
+    container_name: greencart-frontend-dev
     image: greencart-frontend-dev
     build:
       context: ./client
@@ -24,3 +27,6 @@ services:
     volumes:
       - ./client:/app
       - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
