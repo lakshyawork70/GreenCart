@@ -1,0 +1,18 @@
+services:
+  backend:
+    image: lakshyakumar70/greencart-backend:v4
+    container_name: greencart-backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./server/.env
+    restart: unless-stopped
+
+  frontend:
+    image: lakshyakumar70/greencart-frontend:v6
+    container_name: greencart-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
