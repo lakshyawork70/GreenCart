@@ -28,3 +28,7 @@ git add .
 git commit -m "Initial commit without secrets"
 git remote add origin https://github.com/lakshyawork70/GreenCart.git
 git push -u origin main
+
+
+#app.use('/api/user',userRouter)
+#app.use('/api/seller',sellerRouter)

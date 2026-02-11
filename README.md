@@ -30,3 +30,11 @@ git add .
 git commit -m "Initial commit without secrets"
 git remote add origin https://github.com/lakshyawork70/GreenCart.git
 git push -u origin main
+
+
+------dockerization---
+docker compose -f docker-compose.dev.yml up
+docker compose up --build -d
+
+
+docker compose down
