@@ -29,4 +29,6 @@ services:
       - /app/node_modules
     depends_on:
       - backend
+    environment:
+    - BACKEND_HOST=backend
     restart: unless-stopped
