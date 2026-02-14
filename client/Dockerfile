@@ -11,9 +11,9 @@ RUN npm run build
 # Production stage
 FROM nginx:alpine
 
-# ENV BACKEND_HOST=backend:4000
-ENV BACKEND_HOST=backend
-ENV BACKEND_PORT=4000
+ENV BACKEND_HOST=backend:4000
+#ENV BACKEND_HOST=backend
+#ENV BACKEND_PORT=4000
 
 COPY --from=build /app/dist /usr/share/nginx/html
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
